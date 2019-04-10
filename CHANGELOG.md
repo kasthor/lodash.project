@@ -8,4 +8,4 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* provides a functionality similar to $project in mongo 088bea2
+* transforms an object into another, based on mongo's $project d6aa3fc
