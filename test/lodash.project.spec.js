@@ -23,6 +23,12 @@ _.mixin(require('../lodash.project'));
   });
 */
 
+test('leave it alone if no dollar-curly', () => {
+  const test = _.project({ test: 'value' }, { projected: 'test' });
+
+  expect(test.projected).toEqual('test');
+});
+
 test('replaces a key', () => {
   const test = _.project({ test: 'value' }, { projected: '${test}' });
 
